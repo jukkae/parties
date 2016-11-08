@@ -1,0 +1,88 @@
+div {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: #FF0000;
+  color: #FFFFFF;
+}
+
+.details {
+  visibility: hidden;
+  background-color: #FF0000;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.party {
+  position: absolute;
+}
+
+#SDP {
+  left: 50px;
+  top: 200px;
+}
+
+#SKP {
+  left: 100px;
+  top: 50px;
+}
+
+#SSTP {
+  left: 100px;
+  top: 100px;
+}
+
+#STPV {
+  left: 150px;
+  top: 100px;
+}
+
+#SKDL {
+  left: 250px;
+  top: 100px;
+}
+
+#SYP {
+  left: 275px;
+  top: 125px;
+}
+
+#TPSL {
+  left: 350px;
+  top: 125px;
+}
+
+#STP {
+  left: 400px;
+  top: 125px;
+}
+
+#Deva {
+  left: 450px;
+  top: 75px;
+}
+
+#KTP {
+  left: 500px;
+  top: 0;
+}
+
+#Vas {
+  left: 525px;
+  top: 125px;
+}
+
+#STP2 {
+  left: 600px;
+  top: 50px;
+}
+
+.party:hover .details {
+  visibility: visible;
+}
