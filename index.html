@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" type="text/css" href="css/default.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery.connections.js"></script>
   </head>
   <body>
     <div class="party" id="SDP">
@@ -53,5 +54,12 @@
       STP
       <span class="details">Perustettu 1899</span>
     </div>
+    <svg><line id="line1"/></svg>
+    <script>
+    $(document).ready(function() {
+      console.log("hello");
+      $('#SDP').connections({ to: '#SSTP' });
+    });
+    </script>
   </body>
 </html>

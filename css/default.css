@@ -86,3 +86,9 @@ div {
 .party:hover .details {
   visibility: visible;
 }
+
+div.line{
+  transform-origin: 0 100%;
+  height: 3px;
+  background: #000;
+}
