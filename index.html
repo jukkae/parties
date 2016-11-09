@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/default.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="jquery.connections.js"></script>
   </head>
   <body>
+<main>
+<!--SDP and connecting points-->
     <div class="party" id="SDP">
       SDP
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="mid-party" id="SDP-beg">
+        &nbsp;
+    </div>
+    <div class="mid-party" id="SDP-beg2">
+        &nbsp;
+    </div>
+    <div class="mid-party" id="SDP-beg3">
+        &nbsp;
+    </div>
+    <div class="mid-party" id="SDP-mid">
+        &nbsp;
+    </div>
+    <div class="end-party" id="SDP-end">
+    </div>
+<!--SKP and connecting points -->
     <div class="party" id="SKP">
       SKP
-      <span class="details">FÖFFÖLÖ-MÖÖ!</span>
+      <span class="details">Perustettu...</span>
     </div>
+     <div class="mid-party" id="SKP-mid">
+        &nbsp;
+    </div>
+    <div class="mid-party" id="SKP-mid2">
+        &nbsp;
+    </div>
+        <div class="mid-party" id="SKP-mid3">
+        &nbsp;
+    </div>
+    <div class="end-party" id="SKP-end">
+        &nbsp;
+    </div>
+<!--SSTP and connecting points -->
     <div class="party" id="SSTP">
       SSTP
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="end-party" id="SSTP-end">
+     &nbsp;
+    </div>
+<!--STPV and connecting points -->
     <div class="party" id="STPV">
       STPV
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="end-party" id="STPV-end">
+    &nbsp; </div>
+<!--SKDL and connecting points -->
     <div class="party" id="SKDL">
       SKDL
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="mid-party" id="SKDL-mid">
+     &nbsp;
+    </div>
+        <div class="end-party" id="SKDL-end">
+     &nbsp;
+    </div>
+<!--SYP and connecting points -->
     <div class="party" id="SYP">
       SYP
       <span class="details">Perustettu 1899</span>
     </div>
+     <div class="end-party" id="SYP-end">
+      &nbsp;
+    </div>
+<!--TPSL and connecting points -->
     <div class="party" id="TPSL">
       TPSL
-      <span class="details">koslattihiphap RÖÖH RÄÄH</span>
+      <span class="details">Perustettu...</span>
     </div>
+<!--STP and connecting points -->
     <div class="party" id="STP">
       STP
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="end-party" id="STP-end">
+    </div>
+<!--Deva and connecting points -->
     <div class="party" id="Deva">
       Deva
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="end-party" id="Deva-end">
+    </div>
+<!--KTP and connecting points -->
     <div class="party" id="KTP">
       KTP
       <span class="details">Perustettu 1899</span>
     </div>
+     <div class="end-party" id="KTP-end">
+    </div>
+<!--VAS and connecting points -->
     <div class="party" id="Vas">
       Vas.
       <span class="details">Perustettu 1899</span>
     </div>
+    <div class="end-party" id="Vas-end">
+    </div>
+<!--STP2 and connecting points -->
     <div class="party" id="STP2">
       STP
       <span class="details">Perustettu 1899</span>
     </div>
+      <div class="end-party" id="STP2-end">
+    </div>
+<!--LEGEND in so called footer -->
+      </main><footer><div id="legend">1916 1926 1936 1946 1956 1966 1976 1986 1996 2006 2016</div></footer>
     <script>
     $(document).ready(function() {
-      $('#SDP').connections({ to: '#SSTP' });
-      $('#SDP').connections({ to: '#SYP', 'class': 'test' });
+      $('#SDP').connections({ to: '#SDP-end', });
+      $('#KTP').connections({ to: '#KTP-end', });
+        $('#SKP').connections({ to: '#SKP-end', });
+        $('#SSTP').connections({ to: '#SSTP-end', });
+        $('#TPSL').connections({ to: '#STP2', });
+        $('#SKDL').connections({ to: '#SKDL-end', });
+        $('#Vas').connections({ to: '#Vas-end', });
+        $('#STP').connections({ to: '#STP-end', });
+        $('#STPV').connections({ to: '#STPV-end', });
+        $('#SKDL').connections({ to: '#SYP', });
+        $('#SYP').connections({ to: '#SYP-end', });
+        $('#SDP-mid').connections({ to: '#TPSL', });
+        $('#STP2').connections({ to: '#STP2-end', 'class': 'dotted2' });
+        $('#Deva').connections({ to: '#Deva-end', 'class': 'dotted2' });
+        $('#SDP-beg2').connections({ to: '#SKDL', 'class': 'dotted' });
+        $('#SKP-mid').connections({ to: '#SKDL', 'class': 'dotted' });
+        $('#SDP-beg3').connections({ to: '#SYP', 'class': 'dotted' });
+        $('#SDP-beg').connections({ to: '#SSTP', 'class': 'dotted' });
+        $('#SKP').connections({ to: '#SSTP', 'class': 'dotted' });
+        $('#SKDL-mid').connections({ to: '#Deva', 'class': 'dotted' });
+        $('#SKP-mid2').connections({ to: '#KTP', 'class': 'dotted' });
+        $('#SKP-mid2').connections({ to: '#Deva', 'class': 'dotted' });
+        $('#SKP-mid3').connections({ to: '#Vas', 'class': 'dotted' });
+        $('#SKDL-end').connections({ to: '#Vas-end', 'class': 'dotted' });
     });
     </script>
-  </body>
+      </body>
 </html>

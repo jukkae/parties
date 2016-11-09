@@ -1,21 +1,30 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:50px;
+    padding:0px;
+}
+
 div {
   display: inline-block;
-  padding: 5px;
-  border: 1px solid #000000;
+  padding: 10px;
+  border: 0px solid #ffffff;
   border-radius: 6px;
   background-color: #FF0000;
   color: #FFFFFF;
 }
 
 .details {
+    font-size:10px;
   visibility: hidden;
-  background-color: #FF0000;
-  color: #FFFFFF;
+  color: #000;
   text-align: center;
-  padding: 5px;
-  border: 1px solid #000000;
+  padding: 10px;
+  border: 2px solid #FF0000;
   border-radius: 6px;
   position: absolute;
+    background-color:#FFF;
+    left:60px;
+    top:-3px;
   z-index: 1;
 }
 
@@ -23,75 +32,218 @@ div {
   position: absolute;
 }
 
+.end-party {
+  position: absolute;
+padding:0px;
+height:40px;
+}
+
+
+.mid-party {
+  position: absolute;
+padding:0px;
+    height:5px;
+    width:5px;
+}
+
 #SDP {
   left: 50px;
-  top: 200px;
+  top: 270px;
+}
+#SDP-mid {
+  left: 660px;
+  top: 285px;
+}
+
+#SDP-beg2 {
+  left: 400px;
+  top: 285px;
+}
+
+#SDP-beg3 {
+  left: 450px;
+  top: 285px;
+}
+#SDP-beg {
+  left: 160px;
+  top: 285px;
+}
+
+#SDP-end {
+  left: 1275px;
+  top: 270px;
 }
 
 #SKP {
-  left: 100px;
-  top: 50px;
+  left: 180px;
+  top: 100px;
+}
+
+#SKP-mid {
+  left: 480px;
+  top: 120px;
+}
+#SKP-mid2 {
+  left: 920px;
+  top: 115px;
+}
+
+#SKP-mid3 {
+  left: 1050px;
+  top: 115px;
+}
+
+#SKP-end {
+   left: 1075px;
+  top: 100px;
 }
 
 #SSTP {
-  left: 100px;
-  top: 100px;
+  left: 190px;
+  top: 175px;
+}
+
+#SSTP-end {
+  left: 265px;
+  top: 175px;
 }
 
 #STPV {
-  left: 150px;
-  top: 100px;
+  left: 275px;
+  top: 175px;
+}
+
+#STPV-end {
+  left: 375px;
+  top: 175px;
+
 }
 
 #SKDL {
-  left: 250px;
-  top: 100px;
+  left: 450px;
+  top: 175px;
+}
+#SKDL-mid {
+  left: 920px;
+  top: 190px;
+}
+#SKDL-end {
+  left: 1075px;
+  top: 175px;
 }
 
 #SYP {
-  left: 275px;
-  top: 125px;
+  left: 475px;
+  top: 225px;
+}
+#SYP-end {
+  left: 630px;
+  top: 225px;
+
 }
 
 #TPSL {
-  left: 350px;
-  top: 125px;
+  left: 650px;
+  top: 225px;
 }
 
 #STP {
-  left: 400px;
+  left: 1175px;
   top: 125px;
+}
+#STP-end {
+  left: 1275px;
+  top: 125px;
+
 }
 
 #Deva {
-  left: 450px;
-  top: 75px;
+  left: 950px;
+  top: 135px;
+}
+
+#Deva-end {
+  left: 1100px;
+  top: 135px;
+
 }
 
 #KTP {
-  left: 500px;
-  top: 0;
+  left: 1000px;
+  top: 75;
+}
+
+#KTP-end {
+  left: 1275px;
+  top: 75;
+
 }
 
 #Vas {
-  left: 525px;
-  top: 125px;
+  left: 1050px;
+  top: 225px;
+}
+
+#Vas-end{
+    left: 1275px;
+    top: 225px;
 }
 
 #STP2 {
-  left: 600px;
-  top: 50px;
+  left: 775px;
+  top: 225px;
+}
+#STP2-end {
+  left: 900px;
+  top: 225px;
+
 }
 
+
+div:hover{
+    background-color: #000000;
+    z-index:1;
+}
 .party:hover .details {
   visibility: visible;
 }
 
 connection {
-  border: 3px solid red;
+  border: 8px solid red;
   border-radius: 31px;
 }
 
-connection.test {
-  border: 4px dotted blue;
+connection.dotted {
+  border: 4px dotted red;
+}
+
+connection.dotted2 {
+  border: 8px dotted red;
+}
+/* doesn't work
+connection .gradient {
+  border-style: solid;
+    border-width:8px;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 100% 0, 0 0, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to right, red, rgba(0, 0, 0, 0)) 1 100%; 
+}*/
+
+#legend{
+    font-size:10px;
+    width:1200px;
+    background:none;
+    color:#999;
+    text-align: justify;
+    -moz-text-align-last: justify;
+    text-align-last: justify;
+    position:absolute;
+    top:350px;
 }
