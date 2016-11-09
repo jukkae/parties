@@ -87,7 +87,11 @@ div {
   visibility: visible;
 }
 
-.connection {
+connection {
   border: 3px solid red;
   border-radius: 31px;
+}
+
+connection.test {
+  border: 4px dotted blue;
 }
