@@ -200,10 +200,11 @@ padding:0px;
 }
 
 
-div:hover{
+div:hover {
     background-color: #000000;
     z-index:1;
 }
+
 .party:hover .details {
   visibility: visible;
 }
@@ -220,21 +221,30 @@ connection.dotted {
 connection.dotted2 {
   border: 8px dotted red;
 }
-/* doesn't work
-connection .gradient {
-  border-style: solid;
+
+/* For some reason gradient border won't work, tweak to taste */
+/* TODO positioning is shit */
+connection.gradient:before {
+  content: " "; /* Must have some content to have the pseudo-element */
+  padding-left: 60px; /* Padding basically determines the width */
+  background-image: -moz-linear-gradient(left, red, rgba(0, 0, 0, 0));
+}
+
+/* I know, I know, this should not be here, theoretically speaking,
+   but remove this or just try "border-style: none;" and all hell breaks
+   loose. Because CSS. */
+connection.gradient {
+  border-style: none;
     border-width:8px;
     -webkit-border-image: 
-      -webkit-gradient(linear, 100% 0, 0 0, from(red), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;
+      -webkit-linear-gradient(left, red, rgba(0, 0, 0, 0)) 1 100%;
     -moz-border-image:
-      -moz-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;  
+      -moz-linear-gradient(left, red, rgba(0, 0, 0, 0)) 1 100%;  
     -o-border-image:
-      -o-linear-gradient(right, red, rgba(0, 0, 0, 0)) 1 100%;
+      -o-linear-gradient(left, red, rgba(0, 0, 0, 0)) 1 100%;
     border-image:
-      linear-gradient(to right, red, rgba(0, 0, 0, 0)) 1 100%; 
-}*/
+      linear-gradient(to right, red, rgba(0, 0, 0, 0) 1 100%); 
+}
 
 #legend{
     font-size:10px;
